@@ -1,10 +1,10 @@
-const User = require("../models/User")
+const User = require("../../common-auth/User")
 const GameInfo = require("../models/GameInfo")
 const Upgrade = require("../models/Upgrade")
 const GamePlayed = require("../models/GamePlayed")
 const Level = require("../models/Level")
 const {validationResult} = require("express-validator")
-const { errorFormatter } = require("./errorFormatter")
+const { errorFormatter } = require("../../utils/errorFormatter")
 
 class GameInfoController{
   async create(req, res){

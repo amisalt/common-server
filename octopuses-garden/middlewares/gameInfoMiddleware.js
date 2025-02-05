@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken")
-const User = require("../models/User")
+const User = require("../../common-auth/User")
 const GameInfo = require("../models/GameInfo")
 require("dotenv").config()
 

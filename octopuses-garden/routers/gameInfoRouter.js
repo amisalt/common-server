@@ -2,8 +2,8 @@ const Router = require("express")
 const router = new Router()
 const controller = require("../controllers/GameInfoController")
 const {param, cookie, body} = require("express-validator")
-const rolesMiddleware = require("../middlewares/rolesMiddleware")
-const authMiddleware = require("../middlewares/authMiddleware")
+const rolesMiddleware = require("../../common-auth/rolesMiddleware")
+const authMiddleware = require("../../common-auth/authMiddleware")
 const gameInfoMiddleware = require("../middlewares/gameInfoMiddleware")
 
 router.get("/createGame", [

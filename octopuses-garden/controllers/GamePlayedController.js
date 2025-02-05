@@ -1,12 +1,12 @@
 const GamePlayed = require("../models/GamePlayed")
 const Mode = require("../models/Mode")
 const GameInfo = require("../models/GameInfo")
-const User = require("../models/User")
+const User = require("../../common-auth/User")
 const Level = require("../models/Level")
 require("dotenv").config()
 const jwt = require("jsonwebtoken")
 const {validationResult} = require("express-validator")
-const {errorFormatter} = require('./errorFormatter')
+const {errorFormatter} = require("../../utils/errorFormatter")
 
 function generateGameToken(id, start, level){
   const payload = {

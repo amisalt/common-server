@@ -1,3 +1,3 @@
-const databaseConnection = require("../../dbManagement/connect")("Octopuses Garden", process.env.URI_AUTH)
+const databaseConnection = require("../utils/databaseConnect")("Common Auth", process.env.URI_AUTH)
 
 module.exports = databaseConnection

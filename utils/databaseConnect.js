@@ -17,6 +17,5 @@ module.exports = (name, connString) => {
             process.exit(0);
         });
     });
-    // EXPORT DB OBJECT
     return db;
 }
